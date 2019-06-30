@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="15dp"
+    tools:context="com.example.kamrul.currencyconverter.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textUSD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="US doller: "
+            android:textSize="25dp" />
+
+        <EditText
+            android:id="@+id/inputUSD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            tools:layout_editor_absoluteX="89dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <TextView
+            android:id="@+id/convertEuro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="After converting into Euro"
+            android:textSize="25dp"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="60dp" />
+
+        <EditText
+            android:id="@+id/resultEuro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            tools:layout_editor_absoluteX="89dp"
+            tools:layout_editor_absoluteY="60dp" />
+
+        <TextView
+            android:id="@+id/convertTaka"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="After converting into Taka"
+            android:textSize="25dp"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="111dp" />
+
+        <EditText
+            android:id="@+id/resultTaka"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            tools:layout_editor_absoluteX="89dp"
+            tools:layout_editor_absoluteY="99dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/convertBtn"
+                android:layout_width="101dp"
+                android:layout_height="49dp"
+                android:text="Convert"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="231dp" />
+
+            <Button
+                android:id="@+id/clearBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Clear"
+                tools:layout_editor_absoluteX="133dp"
+                tools:layout_editor_absoluteY="231dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
