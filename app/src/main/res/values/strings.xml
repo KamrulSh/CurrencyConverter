@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Currency Converter</string>
+    <string name="us_doller">US doller:</string>
+    <string name="after_converting_into_euro">After converting into Euro</string>
+    <string name="after_converting_into_bitcoin">After converting into Bitcoin</string>
+    <string name="after_converting_into_taka">After converting into Taka</string>
+    <string name="convert">Convert</string>
+    <string name="clear">Clear</string>
 </resources>

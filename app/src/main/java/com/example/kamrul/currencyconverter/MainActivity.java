@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
 
     final double USDTOEURO = 0.88;
     final double USDTOTAKA = 84.57;
+    final double USDTOBTC = 0.000084;
 
     Button convertBtn;
     Button clearBtn;
@@ -26,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
     private EditText txtUSDollers;
     private EditText txtEuros;
     private EditText txtTaka;
+    private EditText txtBtc;
 
     public void convertFixedData() {
 
@@ -34,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
 
         txtEuros = findViewById(R.id.resultEuro);
         txtTaka = findViewById(R.id.resultTaka);
+        txtBtc = findViewById(R.id.resultBtc);
 
         convertBtn = findViewById(R.id.convertBtn);
         clearBtn = findViewById(R.id.clearBtn);
@@ -47,10 +50,12 @@ public class MainActivity extends AppCompatActivity {
                     double usd = Double.parseDouble(usdStr);
 
                     String euroStr = String.valueOf(usd*USDTOEURO);
-                    String colonsStr = String.valueOf(usd*USDTOTAKA);
+                    String takaStr = String.valueOf(usd*USDTOTAKA);
+                    String btcStr = String.valueOf(usd*USDTOBTC);
 
                     txtEuros.setText(euroStr);
-                    txtTaka.setText(colonsStr);
+                    txtTaka.setText(takaStr);
+                    txtBtc.setText(btcStr);
                 }
 
                 catch (Exception excep) {

@@ -16,8 +16,8 @@
             android:id="@+id/textUSD"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="US doller: "
-            android:textSize="25dp" />
+            android:text="@string/us_doller"
+            android:textSize="25sp" />
 
         <EditText
             android:id="@+id/inputUSD"
@@ -26,14 +26,15 @@
             android:ems="10"
             android:inputType="textPersonName"
             tools:layout_editor_absoluteX="89dp"
-            tools:layout_editor_absoluteY="0dp" />
+            tools:layout_editor_absoluteY="0dp"
+            tools:ignore="Autofill,LabelFor" />
 
         <TextView
             android:id="@+id/convertEuro"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="After converting into Euro"
-            android:textSize="25dp"
+            android:text="@string/after_converting_into_euro"
+            android:textSize="25sp"
             tools:layout_editor_absoluteX="16dp"
             tools:layout_editor_absoluteY="60dp" />
 
@@ -44,14 +45,15 @@
             android:ems="10"
             android:inputType="textPersonName"
             tools:layout_editor_absoluteX="89dp"
-            tools:layout_editor_absoluteY="60dp" />
+            tools:layout_editor_absoluteY="60dp"
+            tools:ignore="Autofill,LabelFor" />
 
         <TextView
             android:id="@+id/convertTaka"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="After converting into Taka"
-            android:textSize="25dp"
+            android:text="@string/after_converting_into_taka"
+            android:textSize="25sp"
             tools:layout_editor_absoluteX="16dp"
             tools:layout_editor_absoluteY="111dp" />
 
@@ -62,7 +64,27 @@
             android:ems="10"
             android:inputType="textPersonName"
             tools:layout_editor_absoluteX="89dp"
-            tools:layout_editor_absoluteY="99dp" />
+            tools:layout_editor_absoluteY="99dp"
+            tools:ignore="Autofill,LabelFor" />
+
+        <TextView
+            android:id="@+id/convertBtc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/after_converting_into_bitcoin"
+            android:textSize="25sp"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="111dp" />
+
+        <EditText
+            android:id="@+id/resultBtc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            tools:layout_editor_absoluteX="89dp"
+            tools:layout_editor_absoluteY="99dp"
+            tools:ignore="Autofill,LabelFor" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -73,17 +95,19 @@
                 android:id="@+id/convertBtn"
                 android:layout_width="101dp"
                 android:layout_height="49dp"
-                android:text="Convert"
+                android:text="@string/convert"
                 tools:layout_editor_absoluteX="16dp"
-                tools:layout_editor_absoluteY="231dp" />
+                tools:layout_editor_absoluteY="231dp"
+                tools:ignore="ButtonStyle" />
 
             <Button
                 android:id="@+id/clearBtn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Clear"
+                android:text="@string/clear"
                 tools:layout_editor_absoluteX="133dp"
-                tools:layout_editor_absoluteY="231dp" />
+                tools:layout_editor_absoluteY="231dp"
+                tools:ignore="ButtonStyle" />
 
         </LinearLayout>
     </LinearLayout>
